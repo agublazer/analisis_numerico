@@ -1,0 +1,104 @@
+object Form1: TForm1
+  Left = 407
+  Height = 465
+  Top = 87
+  Width = 825
+  Caption = 'Form1'
+  ClientHeight = 465
+  ClientWidth = 825
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  LCLVersion = '1.8.2.0'
+  object Panel1: TPanel
+    Left = 638
+    Height = 465
+    Top = 0
+    Width = 187
+    Align = alRight
+    BevelInner = bvRaised
+    BevelOuter = bvLowered
+    Caption = 'Panel1'
+    ClientHeight = 465
+    ClientWidth = 187
+    TabOrder = 0
+    object ediStep: TEdit
+      Left = 42
+      Height = 23
+      Top = 416
+      Width = 80
+      TabOrder = 0
+      Text = '0.01'
+    end
+    object ediMin: TEdit
+      Left = 51
+      Height = 23
+      Top = 329
+      Width = 80
+      TabOrder = 1
+      Text = '-1'
+    end
+    object ediMax: TEdit
+      Left = 47
+      Height = 23
+      Top = 365
+      Width = 80
+      TabOrder = 2
+      Text = '1'
+    end
+    object colorbtnFunction: TColorButton
+      Left = 47
+      Height = 25
+      Top = 120
+      Width = 75
+      BorderWidth = 2
+      ButtonColorSize = 16
+      ButtonColor = clBlack
+    end
+    object TrackBar1: TTrackBar
+      Left = 47
+      Height = 25
+      Top = 152
+      Width = 100
+      Position = 0
+      TabOrder = 3
+    end
+  end
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Height = 465
+    Top = 0
+    Width = 150
+    HorzScrollBar.Page = 1
+    VertScrollBar.Page = 1
+    Align = alLeft
+    TabOrder = 1
+  end
+  object Chart1: TChart
+    Left = 150
+    Height = 465
+    Top = 0
+    Width = 488
+    AxisList = <    
+      item
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Alignment = calBottom
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelBrush.Style = bsClear
+      end>
+    Foot.Brush.Color = clBtnFace
+    Foot.Font.Color = clBlue
+    Title.Brush.Color = clBtnFace
+    Title.Font.Color = clBlue
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    Align = alClient
+  end
+end
